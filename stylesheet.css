@@ -81,3 +81,78 @@ margin-top:8px;
 color:#555;
 line-height:1.5;
 }
+
+/* PROJECT IMAGE SIZE OPTIONS */
+
+.img-small{
+width:180px;
+}
+
+.img-medium{
+width:260px;
+}
+
+.img-large{
+width:340px;
+}
+
+/* nếu muốn ảnh full card */
+.img-full{
+width:100%;
+max-width:500px;
+}
+
+/* PROJECT CARD HOVER EFFECT */
+
+.project-card:hover{
+transform:translateY(-4px);
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+transition:all 0.3s ease;
+}
+
+/* PROJECT IMAGE EFFECT */
+
+.project-img{
+transition:transform 0.3s ease;
+}
+
+.project-card:hover .project-img{
+transform:scale(1.03);
+}
+
+/* SOCIAL LINKS */
+
+.social-links{
+margin-top:10px;
+}
+
+.social-links a{
+margin-right:12px;
+font-weight:bold;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+}
+
+.avatar img{
+width:150px;
+}
+
+.project-card{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.project-img{
+width:100%;
+max-width:100%;
+}
+
+}
