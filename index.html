@@ -1,89 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Dinh Van Phuc</title>
-<link rel="stylesheet" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phuc Dinh Van | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+height:80vh;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#38bdf8;
+color:black;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:60px 0;
+}
+
+h2{
+margin-bottom:20px;
+font-size:32px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.project a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:40px 0;
+opacity:0.7;
+}
+
+</style>
 </head>
+
 
 <body>
 
 <div class="container">
 
-<div class="header">
+<header>
 
-<div class="intro">
-<h1>Dinh Van Phuc</h1>
+<h3>Phuc</h3>
 
-<p>
-Robotics & Machine Learning enthusiast.<br>
-Interested in SLAM, computer vision and intelligent robots.
-</p>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<p>
-<a href="#">Email</a> /
-<a href="https://github.com/phuwcc">Github</a> /
-<a href="#">LinkedIn</a>
-</p>
+</header>
 
-</div>
 
-<div class="avatar">
-<img src="images/avatar.jpg">
-</div>
+<section class="hero">
 
-</div>
-
-<h2>About</h2>
+<h1>Hello, I'm <span>Phuc</span></h1>
 
 <p>
-I am a robotics developer focusing on machine learning and autonomous systems.
-My interests include SLAM, robot perception and embedded AI.
+Backend / DevOps focused developer interested in building scalable systems and clean infrastructure.
 </p>
 
-<h2>Recent News</h2>
+<a class="btn" href="#projects">View Projects</a>
 
-<ul>
-<li>[2025] Working on Visual SLAM project.</li>
-<li>[2024] Built quadruped robot dog.</li>
-<li>[2023] Started studying robotics and AI.</li>
-</ul>
+</section>
 
-<h2>Projects</h2>
 
-<div class="project">
+<section id="about">
 
-<h3>Robot Dog</h3>
-<p>Designed a quadruped robot using 3D printed body and servo motors.</p>
-<a href="#">Code</a>
+<h2>About Me</h2>
 
-</div>
+<p>
+I'm a developer interested in backend systems, distributed architectures, and DevOps tooling.
+I enjoy building efficient systems and learning new technologies.
+</p>
 
-<div class="project">
+</section>
 
-<h3>Visual SLAM Experiment</h3>
-<p>Testing ORB-SLAM with ROS and Jetson Nano.</p>
-<a href="#">Github</a>
 
-</div>
-
-<div class="project">
-
-<h3>Robot Arm</h3>
-<p>Designed robotic arm and performed kinematics simulation.</p>
-<a href="#">Project Page</a>
-
-</div>
+<section id="skills">
 
 <h2>Skills</h2>
 
-<ul>
-<li>C++</li>
-<li>Python</li>
-<li>ROS</li>
-<li>SolidWorks</li>
-<li>Machine Learning</li>
-</ul>
+<div class="skills">
+
+<div class="skill">Go</div>
+<div class="skill">Python</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Docker</div>
+<div class="skill">Linux</div>
+<div class="skill">Git</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Project 1</h3>
+<p>Short description of your project.</p>
+<a href="#">GitHub</a>
+</div>
+
+<div class="project">
+<h3>Project 2</h3>
+<p>Short description of your project.</p>
+<a href="#">GitHub</a>
+</div>
+
+<div class="project">
+<h3>Project 3</h3>
+<p>Short description of your project.</p>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: dvphuwcc@email.com</p>
+
+<p>GitHub: https://github.com/phuwcc</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Phuc Dinh Van   </p>
+
+</footer>
+
 
 </div>
 
