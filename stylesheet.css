@@ -1,0 +1,68 @@
+body {
+
+font-family: Arial;
+background: #f5f5f5;
+margin: 0;
+
+}
+
+.container {
+
+max-width: 900px;
+margin: auto;
+background: white;
+padding: 40px;
+
+}
+
+.profile {
+
+text-align: center;
+
+}
+
+.profile-img {
+
+width: 150px;
+border-radius: 50%;
+
+}
+
+h1 {
+
+margin-top: 10px;
+
+}
+
+section {
+
+margin-top: 40px;
+
+}
+
+.project {
+
+display: flex;
+margin-bottom: 20px;
+
+}
+
+.project img {
+
+width: 160px;
+margin-right: 20px;
+
+}
+
+a {
+
+color: #0366d6;
+text-decoration: none;
+
+}
+
+a:hover {
+
+text-decoration: underline;
+
+}
